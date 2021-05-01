@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateAccountsTable extends Migration
 {
-    /**
+    /** 
      * Run the migrations.
      *
      * @return void
@@ -20,13 +20,12 @@ class CreateAccountsTable extends Migration
             $table->string('accountno');
             $table->string('type');
             $table->float('balance');
-            
-            $table->float('interest');   
+            $table->float('interest');
             $table->foreign('userid')->references('id')->on('users'); 
         });
     }
 
-    /**
+    /** 
      * Reverse the migrations.
      *
      * @return void

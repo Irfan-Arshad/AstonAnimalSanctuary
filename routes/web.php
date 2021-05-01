@@ -20,9 +20,7 @@ Route::get('/', function () {
 Route::get('/hello',function(){
     return 'Hello World!';
    });
-   Route::get('list', 'App\Http\Controllers\AccountController@list');
-   Route::get('show/{id}', 'App\Http\Controllers\AccountController@show');
-   Route::get('display', [App\Http\Controllers\AccountController::class, 'display'])->name('display_account');
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
