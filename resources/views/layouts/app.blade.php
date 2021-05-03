@@ -61,7 +61,7 @@
                         @endif
                         
                         <li class="nav-item ">
-                            <a class= "nav-link"href="{{ route('viewAnimals') }}" >View/Manage All Animals </a>
+                            <a class= "nav-link"href="{{ route('viewAnimals') }}" >View All Animals </a>
                         </li>
 
                         <li class="nav-item ">

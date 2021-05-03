@@ -68,7 +68,11 @@
                                         {                                            
                                                 // if the foriegn key matches to myuserid then i own this animal
                                                 if ($animal->userid === $myuserid) {
-                                                        $message = "approved";
+                                                        $message = 
+                                                        '
+                                                        <div class="alert alert-success">
+                                                        <strong>Approved</strong>
+                                                        </div>';
                                                         $adoptionstatus = true;
                                                         }
                                                 //else check if my user id matches in the table other columns
